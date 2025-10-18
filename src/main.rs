@@ -1,3 +1,7 @@
+use rand::prelude::*;
+
 fn main() {
-    println!("Hello, world!");
+    let int: u8 = rand::random();
+
+    println!("Hello, world! Have a random u8: {}", int);
 }
