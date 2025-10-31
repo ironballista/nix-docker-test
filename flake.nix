@@ -28,7 +28,7 @@
               name = "localhost/nix-test";
               tag = "latest";
               contents = [ packages.default ];
-              config.Cmd = "${packages.default}/bin/nix-docker-test";
+              config.Cmd = [ "${packages.default}/bin/nix-docker-test" ];
             };
           };
 
